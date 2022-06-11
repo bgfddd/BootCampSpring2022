@@ -9,10 +9,10 @@ public class ExpidiaPage {
 	WebDriver driver;
 	
 	@FindBy(xpath="//span[text()='Flights']") WebElement flights;
-	@FindBy(xpath="//button[@aria-label='Leaving from']") WebElement leavingfrom ;
-	@FindBy(xpath="//button[@data-stid='location-field-leg1-origin-result-item-button']")  WebElement austin ;
-	@FindBy(xpath="//button[@aria-label='Going to']") WebElement goingto ;
-	@FindBy(xpath="//button[@aria-label='Jun 30, 2022 selected, current check in date.']")WebElement departing ;
+	@FindBy(id="location-field-leg1-origin") WebElement leavingfrom ;
+	@FindBy(id=" location-field-leg1-origin-menu")  WebElement austin ;
+	@FindBy(id="location-field-leg1-destination") WebElement goingto ;
+	@FindBy(id="wizard-flight-tab-roundtrip")WebElement departing ;
 	@FindBy(xpath="location-field-leg1-destination-result-item-button")WebElement virginia ;
 	@FindBy(xpath="//button[@aria-label='Jul 4, 2022 selected, current check in date.']")WebElement returning ;
 	@FindBy(xpath="//*[@id=\"wizard-flight-tab-roundtrip\"]/div/div/div/div/div/div/div/div/div/button")WebElement Donebutton ;
@@ -25,7 +25,7 @@ public class ExpidiaPage {
 	
 	public void Flights() {
 		flights.click();
-		
+		 
 	}
 	
 	public void Leaving() {

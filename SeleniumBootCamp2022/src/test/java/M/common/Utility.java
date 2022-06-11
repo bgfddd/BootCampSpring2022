@@ -53,7 +53,7 @@ public class Utility {
 
   @AfterClass
   public void afterClass() {
-	 // driver.close();
+	  driver.close();
   }
  
   public void Pictures() throws IOException {
