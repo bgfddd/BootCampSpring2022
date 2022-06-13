@@ -2,7 +2,7 @@ package TestExpedia;
 
 import java.io.IOException;
 
-
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import Expedia.ExpidiaPage;
@@ -19,8 +19,15 @@ public class TestExpediaPage extends Utility{
 	  Thread.sleep(6000);
 	  Exp.Going();
 	  Thread.sleep(6000);
-	  /*Exp.DoneButton();
-	  Thread.sleep(6000);*/
+	  Exp.DepClick();
+	  Exp.Departing();
+	  Exp.DoneButton();
+	  Exp.RetClick();
+	  Exp.Returning();
+	  Exp.DoneButton();
 	  
+	  Exp.Search();
+	  Thread.sleep(6000);
+	 
   }
 }
