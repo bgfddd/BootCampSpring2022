@@ -95,4 +95,20 @@ public class ExpidiaPage {
     	  slectButton.click();
 			
 		} 
+      @FindBy(xpath="(//*[@data-stid='select-link'])[1]")WebElement firstTrip;
+      public void  FirstTrip() {
+    	  firstTrip.click();
+			
+		} 
+      
+      @FindBy(xpath="(//*[@data-stid='location-field-leg1-origin-result-item-button'])[1]")WebElement airportName;
+      public void  AirportName() {
+    	  airportName.click();
+			
+		} 
+      @FindBy(xpath="Roundtrip")WebElement textRoundTrip;
+      public String RoundOfText() {
+  		String textRoundTrips=textRoundTrip.getText();
+  		return textRoundTrips;
+  	}
 }
