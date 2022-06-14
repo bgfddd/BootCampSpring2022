@@ -34,10 +34,13 @@ public class TestExpediaPage extends Utility{
 	  ExpidiaPage Exp =new ExpidiaPage(driver);
 	  Exp.Flights();
 	  Thread.sleep(6000);
+	  Pictures();
 	  Exp.Leaving();
 	  Thread.sleep(6000);
+	  Pictures();
 	  Exp.Going();
 	  Thread.sleep(6000);
+	  Pictures();
 	  Exp.DepClick();
 	  Exp.Departing();
 	  Exp.DoneButton();
