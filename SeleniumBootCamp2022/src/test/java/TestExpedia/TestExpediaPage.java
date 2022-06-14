@@ -16,6 +16,7 @@ public class TestExpediaPage extends Utility{
 	  ExpidiaPage Exp =new ExpidiaPage(driver);
 	  Exp.Flights();
 	  Thread.sleep(6000);
+	  Pictures();
 	  String  Flights=Exp.RoundOfText();
 	  SoftAssert softit=new SoftAssert();
 	  softit.assertEquals("Roundtrip",Flights );
@@ -45,6 +46,8 @@ public class TestExpediaPage extends Utility{
 	  Exp.DoneButton();
 	  Exp.Search();
 	  Thread.sleep(6000);
+	  Pictures();
+	  
 	 
   }
 }

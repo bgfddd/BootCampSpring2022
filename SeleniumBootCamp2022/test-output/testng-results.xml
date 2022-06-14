@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-13T00:45:46 CDT" name="Adhoc" finished-at="2022-06-13T00:46:22 CDT" duration-ms="35887">
+  <suite started-at="2022-06-13T23:09:48 CDT" name="Adhoc" finished-at="2022-06-13T23:10:25 CDT" duration-ms="36418">
     <groups>
     </groups>
-    <test started-at="2022-06-13T00:45:46 CDT" name="Regression" finished-at="2022-06-13T00:46:22 CDT" duration-ms="35887">
+    <test started-at="2022-06-13T23:09:48 CDT" name="Regression" finished-at="2022-06-13T23:10:25 CDT" duration-ms="36418">
       <class name="TestExpedia.TestExpediaPage">
-        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:TestExpedia.TestExpediaPage@1a942c18]" started-at="2022-06-13T00:45:46 CDT" name="beforeClass" finished-at="2022-06-13T00:45:54 CDT" duration-ms="8559" status="PASS">
+        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:TestExpedia.TestExpediaPage@55a147cc]" started-at="2022-06-13T23:09:48 CDT" name="beforeClass" finished-at="2022-06-13T23:09:57 CDT" duration-ms="8889" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,162 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="f()[pri:0, instance:TestExpedia.TestExpediaPage@1a942c18]" started-at="2022-06-13T00:45:54 CDT" name="f" finished-at="2022-06-13T00:46:22 CDT" duration-ms="27281" status="PASS">
+        <test-method signature="f()[pri:0, instance:TestExpedia.TestExpediaPage@55a147cc]" started-at="2022-06-13T23:09:57 CDT" name="f" finished-at="2022-06-13T23:10:04 CDT" duration-ms="6707" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"Roundtrip"}
+  (Session info: MicrosoftEdge=102.0.1245.39)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'DESKTOP-H0QBEHU', ip: '192.168.14.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [40fa7e03941a7c9ca90e5cff5a962da8, findElement {using=xpath, value=Roundtrip}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 102.0.1245.39, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:63643}, msedge: {msedgedriverVersion: 101.0.1210.32 (f7af80761c68..., userDataDir: C:\Users\fwzna\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63643/devtoo..., se:cdpVersion: 102.0.1245.39, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 40fa7e03941a7c9ca90e5cff5a962da8]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"Roundtrip"}
+  (Session info: MicrosoftEdge=102.0.1245.39)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'DESKTOP-H0QBEHU', ip: '192.168.14.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [40fa7e03941a7c9ca90e5cff5a962da8, findElement {using=xpath, value=Roundtrip}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 102.0.1245.39, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:63643}, msedge: {msedgedriverVersion: 101.0.1210.32 (f7af80761c68..., userDataDir: C:\Users\fwzna\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63643/devtoo..., se:cdpVersion: 102.0.1245.39, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 40fa7e03941a7c9ca90e5cff5a962da8
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy18.getText(Unknown Source)
+at Expedia.ExpidiaPage.RoundOfText(ExpidiaPage.java:111)
+at TestExpedia.TestExpediaPage.f(TestExpediaPage.java:20)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:TestExpedia.TestExpediaPage@1a942c18]" started-at="2022-06-13T00:46:22 CDT" name="afterClass" finished-at="2022-06-13T00:46:22 CDT" duration-ms="1" status="PASS">
+        <test-method signature="flightPage()[pri:0, instance:TestExpedia.TestExpediaPage@55a147cc]" started-at="2022-06-13T23:10:04 CDT" name="flightPage" finished-at="2022-06-13T23:10:25 CDT" duration-ms="20592" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <button type="button" class="uitk-date-picker-day" data-day="24" aria-label="Jun 24, 2022"></button> is not clickable at point (1042, 454). Other element would receive the click: <td aria-hidden="true" class="uitk-date-picker-day-number" colspan="5"></td>
+  (Session info: MicrosoftEdge=102.0.1245.39)
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'DESKTOP-H0QBEHU', ip: '192.168.14.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [40fa7e03941a7c9ca90e5cff5a962da8, clickElement {id=77a805bc-3a7c-4125-8af5-96e3530f6a9b}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 102.0.1245.39, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:63643}, msedge: {msedgedriverVersion: 101.0.1210.32 (f7af80761c68..., userDataDir: C:\Users\fwzna\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63643/devtoo..., se:cdpVersion: 102.0.1245.39, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: msedge on WINDOWS (40fa7e03941a7c9ca90e5cff5a962da8)] -> xpath: (//*[@data-day='24'])[1]]
+Session ID: 40fa7e03941a7c9ca90e5cff5a962da8]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button type="button" class="uitk-date-picker-day" data-day="24" aria-label="Jun 24, 2022"></button> is not clickable at point (1042, 454). Other element would receive the click: <td aria-hidden="true" class="uitk-date-picker-day-number" colspan="5"></td>
+  (Session info: MicrosoftEdge=102.0.1245.39)
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'DESKTOP-H0QBEHU', ip: '192.168.14.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [40fa7e03941a7c9ca90e5cff5a962da8, clickElement {id=77a805bc-3a7c-4125-8af5-96e3530f6a9b}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 102.0.1245.39, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:63643}, msedge: {msedgedriverVersion: 101.0.1210.32 (f7af80761c68..., userDataDir: C:\Users\fwzna\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63643/devtoo..., se:cdpVersion: 102.0.1245.39, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: msedge on WINDOWS (40fa7e03941a7c9ca90e5cff5a962da8)] -> xpath: (//*[@data-day='24'])[1]]
+Session ID: 40fa7e03941a7c9ca90e5cff5a962da8
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at com.sun.proxy.$Proxy18.click(Unknown Source)
+at Expedia.ExpidiaPage.Departing(ExpidiaPage.java:73)
+at TestExpedia.TestExpediaPage.flightPage(TestExpediaPage.java:42)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightPage -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:TestExpedia.TestExpediaPage@55a147cc]" started-at="2022-06-13T23:10:25 CDT" name="afterClass" finished-at="2022-06-13T23:10:25 CDT" duration-ms="190" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->

@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Adhoc" class="navigator-link">
-              <span class="suite-name border-passed">Adhoc</span>
+              <span class="suite-name border-failed">Adhoc</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,21 +93,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods, 2 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Adhoc" class="hide-methods passed suite-Adhoc"> (hide)</a> <!-- hide-methods passed suite-Adhoc -->
-                      <a href="#" panel-name="suite-Adhoc" class="show-methods passed suite-Adhoc"> (show)</a> <!-- show-methods passed suite-Adhoc -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Adhoc" class="hide-methods failed suite-Adhoc"> (hide)</a> <!-- hide-methods failed suite-Adhoc -->
+                      <a href="#" panel-name="suite-Adhoc" class="show-methods failed suite-Adhoc"> (show)</a> <!-- show-methods failed suite-Adhoc -->
                     </span>
-                    <div class="method-list-content passed suite-Adhoc">
+                    <div class="method-list-content failed suite-Adhoc">
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Adhoc" title="TestExpedia.TestExpediaPage" class="method navigator-link" hash-for-method="f">f</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Adhoc -->
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Adhoc" title="TestExpedia.TestExpediaPage" class="method navigator-link" hash-for-method="flightPage">flightPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Adhoc -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -119,9 +124,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Adhoc" class="panel Adhoc">
-          <div class="suite-Adhoc-class-passed">
+          <div class="suite-Adhoc-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">TestExpedia.TestExpediaPage</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -130,10 +135,70 @@
                   <a name="f">
                   </a> <!-- f -->
                   <span class="method-name">f</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;Roundtrip&quot;}
+  (Session info: MicrosoftEdge=102.0.1245.39)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;
+System info: host: &apos;DESKTOP-H0QBEHU&apos;, ip: &apos;192.168.14.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.13&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [40fa7e03941a7c9ca90e5cff5a962da8, findElement {using=xpath, value=Roundtrip}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 102.0.1245.39, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:63643}, msedge: {msedgedriverVersion: 101.0.1210.32 (f7af80761c68..., userDataDir: C:\Users\fwzna\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63643/devtoo..., se:cdpVersion: 102.0.1245.39, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 40fa7e03941a7c9ca90e5cff5a962da8
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy18.getText(Unknown Source)
+	at Expedia.ExpidiaPage.RoundOfText(ExpidiaPage.java:111)
+	at TestExpedia.TestExpediaPage.f(TestExpediaPage.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="flightPage">
+                  </a> <!-- flightPage -->
+                  <span class="method-name">flightPage</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;button&quot; class=&quot;uitk-date-picker-day&quot; data-day=&quot;24&quot; aria-label=&quot;Jun 24, 2022&quot;&gt;&lt;/button&gt; is not clickable at point (1042, 454). Other element would receive the click: &lt;td aria-hidden=&quot;true&quot; class=&quot;uitk-date-picker-day-number&quot; colspan=&quot;5&quot;&gt;&lt;/td&gt;
+  (Session info: MicrosoftEdge=102.0.1245.39)
+Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;
+System info: host: &apos;DESKTOP-H0QBEHU&apos;, ip: &apos;192.168.14.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.13&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [40fa7e03941a7c9ca90e5cff5a962da8, clickElement {id=77a805bc-3a7c-4125-8af5-96e3530f6a9b}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 102.0.1245.39, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:63643}, msedge: {msedgedriverVersion: 101.0.1210.32 (f7af80761c68..., userDataDir: C:\Users\fwzna\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63643/devtoo..., se:cdpVersion: 102.0.1245.39, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: msedge on WINDOWS (40fa7e03941a7c9ca90e5cff5a962da8)] -&gt; xpath: (//*[@data-day=&apos;24&apos;])[1]]
+Session ID: 40fa7e03941a7c9ca90e5cff5a962da8
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy18.click(Unknown Source)
+	at Expedia.ExpidiaPage.Departing(ExpidiaPage.java:73)
+	at TestExpedia.TestExpediaPage.flightPage(TestExpediaPage.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Adhoc-class-passed -->
+          </div> <!-- suite-Adhoc-class-failed -->
         </div> <!-- panel Adhoc -->
         <div panel-name="test-xml-Adhoc" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -187,11 +252,15 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'f')
+data.setCell(0, 1, 'flightPage')
 data.setCell(0, 2, 'TestExpedia.TestExpediaPage')
-data.setCell(0, 3, 27281);
+data.setCell(0, 3, 20592);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'f')
+data.setCell(1, 2, 'TestExpedia.TestExpediaPage')
+data.setCell(1, 3, 6707);
 window.suiteTableData['Adhoc']= { tableData: data, tableDiv: 'times-div-Adhoc'}
 return data;
 }
@@ -228,12 +297,20 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">f</span>
-                <span class="method-start">8575 ms</span>
+                <span class="method-start">8898 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">flightPage</span>
+                <span class="method-start">15616 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">35865 ms</span>
+                <span class="method-start">36210 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
